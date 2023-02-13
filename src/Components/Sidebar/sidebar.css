@@ -31,6 +31,14 @@
     line-height: 21px;
 }
 
+.sidebarText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .sidebarItem>Img {
     width: 250px;
     margin-top: 15px;

@@ -7,19 +7,20 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Lora', serif;
-    color: #444;
 }
 
 .headerTitles1 {
     position: absolute;
     top: 18%;
-    font-size: 20px;
+    width: 250px;
 }
 
 .headerTitles2 {
     position: absolute;
-    top: 20%;
-    font-size: 100px;
+    top: 28%;
+    font-size: 60px;
+    color: #fff;
+    z-index: 1;
 }
 
 .headerImg {
@@ -27,4 +28,34 @@
     height: 450px;
     margin-top: 80px;
     object-fit: cover;
+    filter: brightness(60%);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .headerTitles1 {
+        width: 200px;
+    }
+
+    .headerTitles2 {
+        font-size: 40px;
+    }
+
+    .headerImg {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .headerTitles1 {
+        width: 150px;
+    }
+
+    .headerTitles2 {
+        font-size: 30px;
+    }
+
+    .headerImg {
+        height: 300px;
+    }
 }

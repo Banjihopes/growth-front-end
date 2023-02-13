@@ -61,3 +61,43 @@
 .topCenter {
     flex: 6;
 }
+
+@media only screen and (max-width: 576px) {
+    .top {
+        flex-direction: column;
+    }
+
+    .topLeft,
+    .topRight {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topList {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .topListItem {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .topListItem {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .topListItem {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .topListItem {
+        margin-right: 25px;
+    }
+}
