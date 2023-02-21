@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://growthpal.onrender.com"
+  "proxy": "https://growthpal.onrender.com/api/"
 }
