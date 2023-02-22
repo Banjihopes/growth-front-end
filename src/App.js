@@ -14,10 +14,11 @@ function App() {
 
   useEffect(() => {
     // This fetch code will execute after the component mounts
-    fetch(process.env.REACT_APP_API_URL + '/api/')
+    fetch(`${process.env.REACT_APP_API_URL}/api/`)
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error(error));
+
   }, []);
 
   return (
